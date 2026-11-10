@@ -1,0 +1,21 @@
+# Create and populate .gitignore
+cat << 'EOF' > .gitignore
+# Python bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+venv/
+env/
+.env
+
+# IDE / Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+EOF
+
+# Initialize git repository
+git init
